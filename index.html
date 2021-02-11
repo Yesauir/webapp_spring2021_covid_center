@@ -151,7 +151,7 @@
                                         <span>Current Temperature:</span>
                                         <strong><abbr title=required>*</abbr></strong>
                                    </label>
-                                   <input type="text" id="txttemp" name="txttemp" required>
+                                   <input type="text" id="txttemp" name="txttemp" required pattern="[0-9]{1}[0-9]{1}">
 
                               </p>
                               
@@ -160,7 +160,7 @@
 
                          <p>
                               <button type="submit">Submit</button>
-                              <button type="reset"></button>
+                              <button type="reset">Reset</button>
                          </p>
 
                     </form>
