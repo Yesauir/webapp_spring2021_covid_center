@@ -22,7 +22,7 @@
                                         <span>first name: </span>
                                         <strong><abbr title="required">*</abbr></strong>
                                    </label>
-                                   <input type="text" id="txtfirstname" name="txtfirstname">
+                                   <input type="text" id="txtfirstname" name="txtfirstname" required>
                               </p>
 
                               <p>
@@ -30,7 +30,7 @@
                                         <span>last name: </span>
                                         <strong><abbr title="required">*</abbr></strong>
                                    </label>
-                                   <input type="text" id="txtlastname" name="txtlastname">
+                                   <input type="text" id="txtlastname" name="txtlastname" required>
                               </p>
 
                               <p>
@@ -46,6 +46,15 @@
                                    <label for="rbother">Other</label>
 
 
+                              </p>
+
+                              <p>
+                                   <label for="txttel">Telephone:  </label>
+                                   <input type="tel" id="txttel" name="txttel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                              </p>
+
+                              <p>
+                                   <button type="submit">Submit</button>
                               </p>
 
                          </fieldset>
