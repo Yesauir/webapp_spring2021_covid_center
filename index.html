@@ -17,6 +17,7 @@
                <article>
                     <form>
                          <fieldset>
+                              <legend>Part 1: Patient Information </legend>
                               <p>
                                    <label for="txtfirstname">
                                         <span>first name: </span>
@@ -33,18 +34,20 @@
                                    <input type="text" id="txtlastname" name="txtlastname" required>
                               </p>
 
-                              <p>          
-                                   <input type="radio" id="rbmale" name="gender" value="male">
-                                   <label for="rbmale">Male</label>
+                              <fieldset>
+                                   <legend>Gender: </legend>
+                                   <p>
+                                        <input type="radio" id="rbmale" name="gender" value="male">
+                                        <label for="rbmale">Male</label>
 
-                                   <input type="radio" id="rbfemale" name="gender" value="female">
-                                   <label for="rbfemale">Female</label>
+                                        <input type="radio" id="rbfemale" name="gender" value="female">
+                                        <label for="rbfemale">Female</label>
 
-                                   <input type="radio" id="rbother" name="gender" value="other">
-                                   <label for="rbother">Other</label>
+                                        <input type="radio" id="rbother" name="gender" value="other">
+                                        <label for="rbother">Other</label>
 
-
-                              </p>
+                                   </p>
+                              </fieldset>
 
                               <p>
                                    <label for="txttel">Telephone:  </label>
@@ -78,6 +81,36 @@
                               </p>
 
                          </fieldset>
+
+                         <fieldset>
+                              <legend>Part 2: Potential Symptoms</legend>
+                              <h3>Please respond accurately to whehter or not you have had the following symptomns.</h3>
+
+                              <p>
+                                   <label for="ddfever">
+                                        <span>Fever or chills:</span>
+                                        <strong><abbr title=required>*</abbr></strong>
+                                   </label>
+                                   <select id="ddfever" name="ddfever">
+                                        <option value="No" selected>No</option>
+                                        <option value="Yes">Yes</option>
+                                   </select>
+                              </p>
+
+                              <p>
+                                   <label for="ddcough">
+                                        <span>Coughs:</span>
+                                        <strong><abbr title=required>*</abbr></strong>
+                                   </label>
+                                   <select id="ddcough" name="ddcough">
+                                        <option value="No" selected>No</option>
+                                        <option value="Yes">Yes</option>
+                                   </select>
+                              </p>
+
+
+                         </fieldset>
+
                     </form>
                </article>
           </section>
