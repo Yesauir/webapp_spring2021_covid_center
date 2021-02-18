@@ -272,26 +272,29 @@
                          </div>
 
 
-                              <p>
-                                   <label for="ddcountry">
-                                        <span>Have you traveled to any countries in the last 14 days?</span>
-                                        <strong><abbr title=required>*</abbr></strong>
-                                        <br>
-                                   </label>
+                         <div class="row form-group">
+                              <label for="ddcountry" class="col-sm-5 col-form-label">
+                                   <span>Have you traveled to any countries in the last 14 days?</span>
+                                             <!--<strong><abbr title=required>*</abbr></strong>-->
+                                   <br>
+                              </label>
 
-                                   <select id="ddcountry" name="ddcountry">
+                              <div>
+                                   <select id="ddcountry" name="ddcountry" class="form-control">
                                         <option value="No" selected>No</option>
                                         <option value="Yes">Yes</option>
                                    </select>
-                                   <br>
+                              </div>
+                              <br>
 
-                                   <div>
-                                        <label for="txtcountry">
-                                             <span>Which Countries? (separate with comma)</span>
-                                             <strong><abbr title=required>*</abbr></strong>
-                                        </label>
-                                        <input type="text" id="txtcountry" name="txtcountry" required>
-                                   </div>
+                              <div>
+                                   <label for="txtcountry">
+                                        <span>Which Countries? (separate with comma)</span>
+                                             <!--<strong><abbr title=required>*</abbr></strong>-->
+                                   </label>
+                                   <input type="text" id="txtcountry" name="txtcountry" required>
+                              </div>
+                         </div>
 
                               <p>
                                    <label for="txttemp">
