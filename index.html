@@ -108,23 +108,26 @@
                                    <input type="date" id="txtDob" name="txtDob" required class="form-control" placeholder="Date of Birth">
                               </div>
                          </div>
-
                     </fieldset>
 
-                    <fieldset>
-                         <legend>Part 2: Potential Symptoms</legend>
+
+                    <fieldset class="border">
+                         <div class="alert alert-primary">
+                              <legend>Part 2: Potential Symptoms</legend>
+                         </div>
+
                          <h3>Please respond accurately to whether or not you have had the following symptomns.</h3>
 
-                         <p>
-                              <label for="ddfever">
+                         <div class="row form-group">
+                              <label for="ddfever" class="col-sm-2 col-form-label">
                                    <span>Fever or chills:</span>
-                                   <strong><abbr title=required>*</abbr></strong>
+                                                       <!--<strong><abbr title=required>*</abbr></strong>-->
                               </label>
-                              <select id="ddfever" name="ddfever">
+                              <select id="ddfever" name="ddfever" class="form-control">
                                    <option value="No" selected>No</option>
                                    <option value="Yes">Yes</option>
                               </select>
-                         </p>
+                         </div>
 
                          <p>
                               <label for="ddcough">
