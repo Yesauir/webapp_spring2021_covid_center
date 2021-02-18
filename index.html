@@ -260,7 +260,7 @@
 
                               <label for="ddcontact" class="col-sm-5 col-form-label">
                                    <span>Have you had contact or cared for someone who has been diagonsed with COVID-19 in the last 14 days?</span>
-                                         <!--<strong><abbr title=required>*</abbr></strong>-->
+                                   <!--<strong><abbr title=required>*</abbr></strong>-->
                                    <br>
                               </label>
                               <div>
@@ -275,7 +275,7 @@
                          <div class="row form-group">
                               <label for="ddcountry" class="col-sm-5 col-form-label">
                                    <span>Have you traveled to any countries in the last 14 days?</span>
-                                             <!--<strong><abbr title=required>*</abbr></strong>-->
+                                   <!--<strong><abbr title=required>*</abbr></strong>-->
                                    <br>
                               </label>
 
@@ -287,36 +287,40 @@
                               </div>
                               <br>
 
-                              <div>
-                                   <label for="txtcountry">
+                              <div class="row form-group">
+                                   <label for="txtcountry" class="col-sm-5 col-form-label">
                                         <span>Which Countries? (separate with comma)</span>
-                                             <!--<strong><abbr title=required>*</abbr></strong>-->
+                                        <!--<strong><abbr title=required>*</abbr></strong>-->
                                    </label>
-                                   <input type="text" id="txtcountry" name="txtcountry" required>
+                                   <div class="col-sm-4">
+                                        <input type="text" id="txtcountry" name="txtcountry" required>
+                                   </div>
                               </div>
                          </div>
 
-                              <p>
-                                   <label for="txttemp">
-                                        <span>Current Temperature:</span>
-                                        <strong><abbr title=required>*</abbr></strong>
-                                   </label>
+                         <div class="row form-group">
+                              <label for="txttemp" class="col-sm-5 col-form-label">
+                                   <span>Current Temperature:</span>
+                                        <!--<strong><abbr title=required>*</abbr></strong>-->
+                              </label>
+                              <div class="row form-group">
                                    <input type="text" id="txttemp" name="txttemp" required pattern="[0-9]{1}[0-9]{1}.[0-9]{1}">
+                              </div>
+                         </div>
 
-                              </p>
-
-                              <p>
-                                   <label for="ddtest">
-                                        <span>Have you been tested for COVID-19 in the last 14 days?</span>
-                                        <strong><abbr title=required>*</abbr></strong>
-                                        <br>
-                                   </label>
-
-                                   <select id="ddtest" name="ddtest">
+                         <div class="row form-group">
+                              <label for="ddtest" class="col-sm-5 col-form-label">
+                                   <span>Have you been tested for COVID-19 in the last 14 days?</span>
+                                   <!--<strong><abbr title=required>*</abbr></strong>-->
+                                   <br>
+                              </label>
+                              <div>
+                                   <select id="ddtest" name="ddtest" class="form-control">
                                         <option value="No" selected>No</option>
                                         <option value="Yes">Yes</option>
                                    </select>
-                              </p>
+                              </div>
+                         </div>
 
                     </fieldset>
 
